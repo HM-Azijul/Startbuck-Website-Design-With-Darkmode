@@ -56,4 +56,74 @@ header ul li {
     margin-left: 30px;
 }
 
-header ul li a {}
+header ul li a {
+    display: inline-block;
+    color: var(--black);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* content */
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.content .text-box {
+    position: relative;
+    max-width: 600px;
+    z-index: 1;
+    margin-right: 20px;
+}
+
+.content .text-box h2 {
+    font-size: 3em;
+    color: var(--black);
+    line-height: 1.4em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.content .text-box h2 span {
+    font-size: 1.2em;
+    color: var(--green);
+}
+
+.content .text-box a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: var(--green);
+    color: var(--white);
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.content .img-box {
+    position: relative;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .img-box::before {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: var(--green);
+    border-radius: 50%;
+}
+
+.content .img-box img {
+    position: relative;
+    z-index: 1;
+    max-width: 350px;
+}
