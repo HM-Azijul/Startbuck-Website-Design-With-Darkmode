@@ -32,7 +32,28 @@ header {
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 10px 100px;
+    z-index: 10;
 }
+
+header .logo {
+    position: relative;
+    max-width: 70px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    display: flex;
+    margin-left: 30px;
+}
+
+header ul li a {}
