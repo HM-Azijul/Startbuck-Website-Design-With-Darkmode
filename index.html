@@ -8,21 +8,29 @@
     <title>Startbuck Website Design</title>
 
     <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <section>
+    <section class="home container">
         <header>
             <a href="#">
                 <img src="images/logo.png" alt="logo" class="logo">
             </a>
+
+            <div class="toggle"></div>
 
             <ul class="navigation">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Menu</a></li>
                 <li><a href="#">What's New</a></li>
                 <li><a href="#">Contact</a></li>
+                <!-- theme switch -->
+                <li><span class="theme-switch"></span></li>
             </ul>
         </header>
 
@@ -30,10 +38,11 @@
             <div class="text-box">
                 <h2>It's not just Coffee <br> It's <span>Starbucks</span></h2>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque quam assumenda nostrum minus earum vitae consequatur labore,
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque quam assumenda nostrum minus earum vitae consequatur
+                    labore,
                     nam blanditiis rerum velit praesentium id culpa voluptas unde nesciunt consequuntur placeat enim.
                 </p>
-                <a href="#">Learn More</a>
+                <a href="#" class="button">Learn More</a>
             </div>
 
             <div class="img-box">
@@ -42,8 +51,16 @@
         </div>
         <!-- content end -->
 
+        <!-- social -->
+        <ul class="social">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
     </section>
 
+    <!-- js -->
+    <script src="main.js"></script>
 </body>
 
 </html>
